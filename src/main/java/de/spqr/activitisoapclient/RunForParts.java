@@ -9,7 +9,7 @@ import org.activiti.engine.delegate.JavaDelegate;
 
 
 /**
- *
+ * Class implements JavaDelegate interface and is made for use with activiti
  * @author said
  */
 public class RunForParts implements JavaDelegate{

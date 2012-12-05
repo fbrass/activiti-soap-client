@@ -5,6 +5,7 @@
 package de.spqr.activitisoapclient;
 
 /**
+ * Class of a part order
  *
  * @author said
  */
@@ -14,22 +15,39 @@ public class Order {
     private long amount;
     private String manufacturer;
 
-    public Order(){
-        this.part=null;
-        this.amount=0;
-        this.manufacturer=null;
+    /**
+     * Default constructor
+     */
+    public Order() {
+        this.part = null;
+        this.amount = 0;
+        this.manufacturer = null;
     }
+
+    /**
+     * constructer
+     *
+     * @param part name of the part to order
+     * @param amount amount of the part to order
+     * @param manufacturer name of the manufacturer of the part
+     */
     public Order(String part, long amount, String manufacturer) {
         this.part = part;
         this.amount = amount;
         this.manufacturer = manufacturer;
     }
 
+    /**
+     * Method to check if Order is correct
+     *
+     * @return true for correct and false for uncorrect
+     */
     public boolean isCoorect() {
         if (part.isEmpty() || amount == 0 || manufacturer.isEmpty() || part == null || manufacturer == null) {
             return false;
+        } else {
+            return true;
         }
-        else return true;
     }
 
     public long getAmount() {

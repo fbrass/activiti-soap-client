@@ -8,7 +8,7 @@ import org.activiti.engine.delegate.DelegateExecution;
 import org.activiti.engine.delegate.JavaDelegate;
 
 /**
- *
+ *  Class sendOrder implements JavaDelegate interface and is made for use in acitiviti
  * @author said
  */
 public class SendOrder implements JavaDelegate {

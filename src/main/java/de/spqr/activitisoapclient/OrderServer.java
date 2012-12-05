@@ -10,7 +10,7 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 
 /**
- *
+ * Interface für the order web service server
  * @author said
  */
 
